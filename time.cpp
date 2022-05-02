@@ -32,7 +32,10 @@ void refreshWindow() {
             time_info->tm_wday, time_info->tm_mday, time_info->tm_mon
         };
         for (int i = 0; i < 6; i++) datas[i] = datas[i] * (width - 2) / total[i] + 1;
-        for (int i = 0; i < 6; i++) for (int j = 0; j < width - 1 && j <= datas[i]; j = -~j) string_time[i][j] = '#';
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < width - 1 && j <= datas[i]; j = -~j) string_time[i][j] = '#';
+            for (int j = datas[i] + 1; j < width - 1; j = -~j) string_time[i][j] = ' ';
+        }
         std::sprintf(string_time[0], "[%2d", time_info->tm_sec);
         std::sprintf(string_time[1], "[%2d", time_info->tm_min);
         std::sprintf(string_time[2], "[%2d", time_info->tm_hour);
