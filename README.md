@@ -1,14 +1,38 @@
 C++写的一些小项目
 
 # 编译
-大部分代码直接用 g++ 编译就可以了，
-如果有特殊情况会在后文注明。
+```sh
+make makabaka
+```
+`makabaka`：你要编译的代码去掉 `.cpp` 后缀后的名字。  
+全部编译可以直接 `make all`
 
 # 功能
-| 文件名                | 作用                                          |
-| --------------------- | --------------------------------------------- |
-| brainfuck.cpp         | Bainfuck 解释器                               |
-| golden_section.cpp    | 使用牛顿迭代法计算黄金分割                    |
-| huffman.cpp           | `Huffman` 编码                                |
-| rand-string.cpp       | 生成随机字符串，参数是字符串长度（默认 10）   |
-| time.cpp              | 显示时间，以后也许会加上颜色                  |
+| 文件名                | 作用                          |
+| --------------------- | ----------------------------- |
+| brainfuck.cpp         | Bainfuck 解释器               |
+| golden-section.cpp    | 使用牛顿迭代法计算黄金分割    |
+| rand-string.cpp       | 生成随机字符串                |
+| time.cpp              | 显示时间                      |
+
+
+# 使用
+```sh
+golden-section
+```
+`\n` 下一轮，`^D` 退出。
+
+```sh
+rand-string [n]
+```
+生成长度为 `n` 的随机字符串，`n` 默认为 10。
+
+```sh
+time
+```  
+显示时间，按 `q` 退出。以后也许会加上颜色。
+
+```sh
+brainfuck <filename>
+```
+略
