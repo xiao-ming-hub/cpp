@@ -5,10 +5,10 @@ C++写的一些小项目
 如果有特殊情况会在后文注明。
 
 # 功能
-| 文件名 | 作用 |
-| - | - |
-| brainfuck.hpp | Bainfuck 解释器 |
-| golden_section.cpp | 使用牛顿迭代法计算黄金分割 |
-| huffman.cpp | Huffman 编码 |
-| rand-string.cpp | 生成随机字符串，参数是字符串长度（默认 10） |
-| matrix.hpp | 实矩阵计算 |
+| 文件名                | 作用                                          |
+| --------------------- | --------------------------------------------- |
+| brainfuck.cpp         | Bainfuck 解释器                               |
+| golden_section.cpp    | 使用牛顿迭代法计算黄金分割                    |
+| huffman.cpp           | `Huffman` 编码                                |
+| rand-string.cpp       | 生成随机字符串，参数是字符串长度（默认 10）   |
+| time.cpp              | 显示时间，以后也许会加上颜色                  |
