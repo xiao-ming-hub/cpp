@@ -6,7 +6,10 @@ clean:
 bin:
 	mkdir bin
 
-cube-scrambling: cube-scrambling.cpp
+hex-color: bin hex-color.cpp
+	g++ -o bin/hex-color hex-color.cpp
+
+cube-scrambling: bin cube-scrambling.cpp
 	g++ -o bin/cube-scrambling cube-scrambling.cpp
 
 time: bin time.cpp
