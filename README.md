@@ -8,12 +8,13 @@ make makabaka
 全部编译可以直接 `make all`
 
 # 功能
-| 文件名                | 作用                          |
+| 文件                  | 作用                          |
 | --------------------- | ----------------------------- |
 | brainfuck.cpp         | Bainfuck 解释器               |
 | golden-section.cpp    | 使用牛顿迭代法计算黄金分割    |
 | rand-string.cpp       | 生成随机字符串                |
 | time.cpp              | 带进度条地显示时间            |
+| cube-scrambling.cpp   | 魔方打乱生成                  |
 
 
 # 使用
