@@ -16,7 +16,6 @@ make makabaka
 | time.cpp              | 带进度条地显示时间            |
 | cube-scrambling.cpp   | 魔方打乱生成                  |
 
-
 # 使用
 ```sh
 golden-section
@@ -32,8 +31,3 @@ rand-string [n]
 time
 ```  
 显示时间，按 `q` 退出。以后也许会加上颜色。
-
-```sh
-brainfuck <filename>
-```
-略
