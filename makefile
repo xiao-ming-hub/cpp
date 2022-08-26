@@ -1,10 +1,16 @@
-all: time brainfuck golden-section rand-string
+all: time brainfuck golden-section rand-string unicode hex-color cube-scrambling
 
 clean:
 	if [ -e bin ]; then rm bin -rf; fi
 
 bin:
 	mkdir bin
+
+schulte-grid: bin schulte-grid.c
+	gcc -o bin/schulte-grid schulte-grid.c -Wall
+
+unicode: bin unicode.c
+	gcc -o bin/unicode unicode.c
 
 hex-color: bin hex-color.cpp
 	g++ -o bin/hex-color hex-color.cpp
@@ -23,4 +29,3 @@ golden-section: bin golden-section.cpp
 
 rand-string: bin rand-string.cpp
 	g++ -o bin/rand-string rand-string.cpp
-
